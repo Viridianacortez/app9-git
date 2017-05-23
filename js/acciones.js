@@ -48,10 +48,10 @@ function watchPosition(){
 	var options= {
 		maximumAge:3600000,
 		timeout:3000,
-		enableHighAccuracy: true,
+		enableHighAccuracy   :true,
 	}
 	
-	var WatchID= navigator.geolocation.watchPosition(onSuccess, onError,options);
+	var WatchID = navigator.geolocation.watchPosition(onSuccess, onError,options);
 	
 	function onSuccess(position){
 		
