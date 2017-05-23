@@ -28,13 +28,13 @@ function getPosition(){
 	
 	function onSuccess(position){
 		
-		alert('latitude:' + position.coords.latitude  +'\n'+
+		alert('Latitude:' + position.coords.latitude  +'\n'+
 		'Longitude:'   + position.coords.longitude    +'\n'+
 		'Altitude:'   + position.coords.altitude    +'\n'+
 		'Accuracy:'   + position.coords.accuracy    +'\n'+
 	'Altitude Accuracy:'   + position.coords.altitudeAccuracy   +'\n'+
 	'Heading:'   + position.coords.heading    +'\n'+
-	'speed:'   + position.coords.speed    +'\n'+
+	'Speed:'   + position.coords.speed    +'\n'+
 	'Timestamp:'   + position.timestamp    +'\n');
 	};
 	
@@ -59,7 +59,7 @@ function watchPosition(){
 		$('#longitud').html(position.coords.longitude);
 		$('#altitud').html(position.coords.altitude);
 		$('#accuracy').html(position.coords.accuracy);
-		$('#aacucary').html(position.coords.altitudeAccuracy);
+		$('#aaccuracy').html(position.coords.altitudeAccuracy);
 		$('#headingg').html(position.coords.heading);
 		$('#speed').html(position.coords.speed);
 		$('#timestamp').html(position.timestamp);
